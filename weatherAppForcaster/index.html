@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="search_place">
+                <input type="text" placeholder="enter city name" spellcheck="false">
+                <button id="search_btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <!--
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+            -->
+            <div class="img_tempcontainer">
+                <img id="weather_img" src="./images/rain.png" alt="weather_icons">
+                <p id="temp">7°c</p>
+                <p id="city">New York</p>
+            </div>
+            <div class="footer">
+                <div class="footweathervalue">
+                    <div class="imgs1">
+                       <img src="./images/humidity.png" >
+                    </div>
+                    <div class="val">
+                       <p id="humidpercent">48%</p><br>
+                       <p style="font-size: x-small;position: relative; bottom: 15px;left: 5px;">Humidity</p>
+                    </div>
+                </div>
+                <div class="footweathervalue">
+                    <div class="imgs2">
+                       <img src="./images/wind.png">
+                    </div>
+                    <div class="val">
+                       <p id="wind_speed" style="position: relative; right: 21px;">10.29 km/h</p><br>
+                       <p style="font-size: x-small;position: relative; bottom: 15px;right: 32px;" >Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
